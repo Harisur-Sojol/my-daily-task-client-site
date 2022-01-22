@@ -1,0 +1,38 @@
+.add-task{
+    background-color: 
+    #DDDDDD;
+    /* border-radius: 5px;
+    padding: 5px 0; */
+    /* height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 140px; */
+    width: 400px;
+}
+.add-task form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.add-task form input, textarea{
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: #DDDDDD;
+}
+
+.name-input{
+    padding: 10px;
+}
+
+.submit-btn{
+    background-color: #2196F3;
+    border: #2196F3;
+    border-radius: 5px;
+    padding: 12px 135px;
+    color: #fff;
+
+}

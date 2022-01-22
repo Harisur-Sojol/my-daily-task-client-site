@@ -1,0 +1,22 @@
+.task-area{
+    
+    width: 400px;
+    /* margin: auto; */
+    /* margin-top: 140px; */
+    background-color: #DDDDDD;
+
+}
+
+.task{
+    height: 92vh;
+}
+
+.btn-regular{
+   margin-top: 86px;
+   background-color: #2196F3;
+   border: #2196F3;
+   border-radius: 5px;
+   padding: 12px 120px;
+   color: #fff;
+   margin-top: 273px;
+}

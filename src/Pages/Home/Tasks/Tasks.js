@@ -6,7 +6,7 @@ import './Tasks.css'
 const Tasks = () => {
 
     const [tasks, setTasks] = useState([]);
-
+    
     useEffect(() => {
         fetch("http://localhost:5000/tasks")
             .then((res) => res.json())
@@ -26,7 +26,6 @@ const Tasks = () => {
                 .then(data => {
                     if (data.deletedCount > 0) {
                         alert("Deleted Successfully")
-                        // window.location.reload()
                         const remainingTask = tasks.filter(td => td._id !== id);
                         setTasks(remainingTask)
                     }

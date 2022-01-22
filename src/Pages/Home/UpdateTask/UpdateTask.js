@@ -18,7 +18,7 @@ const UpdateTask = () => {
     // Handle form
     const onSubmit = data => {
         alert("Updated successfully")
-        const url = `http://localhost:5000/singleTask/${id}`
+        const url = `https://stormy-beach-65788.herokuapp.com/singleTask/${id}`
         fetch(url, {
             method: "PUT",
             headers: {

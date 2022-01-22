@@ -6,9 +6,9 @@ import './Tasks.css'
 const Tasks = () => {
 
     const [tasks, setTasks] = useState([]);
-    
+
     useEffect(() => {
-        fetch("http://localhost:5000/tasks")
+        fetch("https://stormy-beach-65788.herokuapp.com/tasks")
             .then((res) => res.json())
             .then((data) => setTasks(data));
     }, []);
@@ -18,7 +18,7 @@ const Tasks = () => {
     const handleDeleteTask = id => {
         const proceed = window.confirm("Are You Sure You Want To Delete?")
         if (proceed) {
-            const url = `http://localhost:5000/deleteTask/${id}`;
+            const url = `https://stormy-beach-65788.herokuapp.com/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

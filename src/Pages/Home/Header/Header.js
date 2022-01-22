@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <Navbar bg="" style={{ backgroundColor: '#5b528b' }} variant="light" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
-                    <Navbar.Brand href="#home">Daily Task</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/home" className='text-white'>Daily Task</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} style={{ color: 'white' }} to="/home">Home</Nav.Link>

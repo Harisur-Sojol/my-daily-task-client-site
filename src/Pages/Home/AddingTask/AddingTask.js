@@ -15,7 +15,7 @@ const AddingTask = () => {
 
     const onSubmit = data => {
     alert("Task Added successfully")
-    fetch("http://localhost:5000/addingTask",{
+    fetch("https://stormy-beach-65788.herokuapp.com/addingTask",{
         method: "POST",
         headers: {"content-type": "application/json"},
         body: JSON.stringify(data),

@@ -1,7 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from './Pages/Home/Home';
 import AddingTask from './Pages/Home/AddingTask/AddingTask';
-import Hudai from './Pages/Home/Hudai/Hudai';
 import Header from "./Pages/Home/Header/Header";
 import Tasks from "./Pages/Home/Tasks/Tasks";
 import UpdateTask from "./Pages/Home/UpdateTask/UpdateTask";

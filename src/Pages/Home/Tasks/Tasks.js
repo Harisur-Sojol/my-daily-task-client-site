@@ -44,14 +44,16 @@ const Tasks = () => {
                     tasks.map((task, index) =>
                         <div className='col-lg-4 col-md-6 col-sm-10'>
                             <div className="card shadow box">
-                                <h2 className='id'>{index + 1}</h2>
-                                <div className="card-body mt-5">
-                                    <h3 className='mt-3'>{task.name}</h3>
-                                    <p className='mt-3 text-secondary'>{task.description}</p>
-                                </div>
-                                <div className="d-flex justify-content-between align-items-center p-3">
-                                    <Link to={`/updateTask/${task._id}`}><Button variant="outline-primary">Update</Button></Link>
-                                    <Button onClick={() => handleDeleteTask(task._id)} variant="outline-danger">Delete</Button>
+                                <h3 className='task-number'>{index + 1}</h3>
+                                <div className="task-info">
+                                    <div className="card-body mt-5">
+                                        <h3 className='mt-3'>{task.name}</h3>
+                                        <p className='mt-3 '>{task.description}</p>
+                                    </div>
+                                    <div className="d-flex justify-content-between align-items-center p-3">
+                                        <Link to={`/updateTask/${task._id}`}><Button className="update-btn" variant="">Update</Button></Link>
+                                        <Button onClick={() => handleDeleteTask(task._id)} className="delete-btn" variant="">Delete</Button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

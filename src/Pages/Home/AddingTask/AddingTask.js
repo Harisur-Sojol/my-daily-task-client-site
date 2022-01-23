@@ -11,7 +11,6 @@ const AddingTask = () => {
 
     const [error, setError] = useState("");
     const [disable, setDisable] = useState(true);
-    const [data, setData] = useState([]);
 
 
     const onSubmit = data => {

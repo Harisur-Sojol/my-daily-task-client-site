@@ -11,21 +11,52 @@
    position: relative;
    overflow: hidden;
   transition: all .5s linear;
-
 }
 
-.id {
+.task-number {
   position: absolute;
-  top: -70px;
-  left: -80px;
+  top: -62px;
+  left: -81px;
   transform: rotate(-45deg);
   background-color: #00AA55;
   width: 150px;
    color: #fff;
    text-align: center;
-  padding: 80px 0 15px;
+  padding: 70px 0 13px;
+}
+
+.update-btn{
+
+   color: #00AA55;
+   border: 2px solid #00AA55;
+   padding: 9px 25px;
+}
+
+.delete-btn{
+   color: red;
+   border: 2px solid rgba(255, 0, 0, 0.514);
+   padding: 9px 25px;
 }
 
 .box:hover{
    transform: translateY(-10px);
+}
+
+.box:hover .task-info{
+   background-color: #00AA55;
+   color: #fff;
+}
+.box:hover .task-number{
+   background-color: #fff;
+   color: #00AA55;
+}
+.box:hover .update-btn{
+   background-color: #fff;
+   border: #fff;
+   color: #00AA55;
+}
+.box:hover .delete-btn{
+   background-color: #fff;
+   border: #fff;
+   color: red;
 }

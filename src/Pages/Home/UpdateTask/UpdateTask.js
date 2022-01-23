@@ -8,12 +8,11 @@ const UpdateTask = () => {
 
     const history = useHistory()
     const { id } = useParams();
-
-    const { register, handleSubmit, reset } = useForm();
-
+    
     const [error, setError] = useState("");
     const [disable, setDisable] = useState(true);
-
+    
+    const { register, handleSubmit, reset } = useForm();
 
     // Handle form
     const onSubmit = data => {

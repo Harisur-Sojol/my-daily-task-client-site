@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './AddingTask.css'
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
@@ -11,10 +11,11 @@ const AddingTask = () => {
 
     const [error, setError] = useState("");
     const [disable, setDisable] = useState(true);
+    const [data, setData] = useState([]);
 
 
     const onSubmit = data => {
-    alert("Task Added successfully")
+    alert("Created successfully")
     fetch("https://stormy-beach-65788.herokuapp.com/addingTask",{
         method: "POST",
         headers: {"content-type": "application/json"},
